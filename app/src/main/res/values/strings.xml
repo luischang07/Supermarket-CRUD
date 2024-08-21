@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SuperMarket</string>
+    <string name="log_out">log_out</string>
+
+    <string name="productos">Productos</string>
+    <string name="producto_id">ID Producto</string>
+    <string name="nombre_producto">Nombre del Producto</string>
+    <string name="precio_unitario">Precio del Producto</string>
+    <string name="unidades_del_producto">Numero de Unidades</string>
+
+    <string name="recuperar">Recuperar</string>
+    <string name="grabar">Grabar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="borrar">Borrar</string>
+    <string name="modificar">Modificar</string>
+    <string name="consultar_producto">Consultar Producto</string>
+    <string name="back">Back</string>
+
+    <string name="paquete_id">ID Paquete</string>
+    <string name="eliminar_fila">Eliminar Fila</string>
+    <string name="agregar_fila">Agregar Fila</string>
+
+    <string name="idProduct">Producto:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="precioUnitario">Precio Unitario:</string>
+    <string name="Unidades">Unidades en Stock:</string>
+
+    <string name="consultar_venta">Consultar Ventas</string>
+    <string name="consultas">CONSULTAS</string>
+    <string name="cuenta2">Cuenta:</string>
+    <string name="logo">Logo</string>
+    <string name="paquetes">Paquetes</string>
+    <string name="ventas">Ventas</string>
+    <string name="Activo">Activo</string>
+    <string name="inactivo">Inactivo</string>
+    <string name="fecha">Fecha:</string>
+    <string name="importe">IMPORTE</string>
+    <string name="consulta">CONSULTA</string>
+    <string name="reportes">Reportes</string>
+    <string name="registro_paquetes">Creacion de Paquetes</string>
+    <string name="Asterisco">*</string>
+    <string name="estatus">"Estatus: "</string>
+    <string name="folio">Folio</string>
+    <string name="ProdOPaq">Producto o paquete</string>
+    <string name="id">"ID: "</string>
+    <string name="tipo">"Tipo: "</string>
+    <string name="precio">"Precio: "</string>
+    <string name="txt_precio">Precio</string>
+    <string name="descuento">Descuento (%)</string>
+    <string name="consultar_paquetes">Consultar</string>
+    <string name="consulta_1">Los productos que no forman parte de paquetes y que no se han vendido</string>
+    <string name="consultar_productos">Consultar Productos</string>
+    <string name="Consulta_2">Paquetes que requieren de mas de 3 productos y 10 unidades.</string>
+    <string name="el_importe_de_ventas_por_producto">El importe de ventas por producto de manera individual y en paquete.</string>
+    <string name="consultar_paquetes2">Consultar Paquetes</string>
+    <string name="individual">Individual</string>
+    <string name="en_paquete">En Paquete</string>
+
+
+</resources>

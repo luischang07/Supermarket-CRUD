@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay"
+    tools:context=".rud_paquetes">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Paquetes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradientelogo"
+            android:elegantTextHeight="true"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="20dp"
+            android:text="@string/paquetes"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFolio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Paquetes"
+            app:layout_constraintVertical_bias="0.098">
+
+            <EditText
+                android:id="@+id/txtIDPaquete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+
+                android:hint="@string/paquete_id"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spProductoPaquete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:importantForAutofill="no"
+
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFolio"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutUnidades"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spProductoPaquete"
+            app:layout_constraintVertical_bias="0.097">
+
+            <EditText
+                android:id="@+id/txtUnidadesPaquete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/unidades_del_producto"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUnidades"
+            app:layout_constraintVertical_bias="0.293">
+
+            <EditText
+                android:id="@+id/txtDescuento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descuento"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="444dp" />
+
+
+        <Button
+            android:id="@+id/btnConsultarPaquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/consultar_paquetes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnModificarPaquete"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnModificarPaquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/modificar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnConsultarPaquete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnConsultarPaquete"
+            app:layout_constraintTop_toTopOf="@+id/btnConsultarPaquete" />
+
+        <Button
+            android:id="@+id/btnEliminarPaquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/borrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnConsultarPaquete"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btnConsultarPaquete"
+            app:layout_constraintTop_toBottomOf="@+id/btnConsultarPaquete"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <Button
+            android:id="@+id/btnLimpiarPaquete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/limpiar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnEliminarPaquete"
+            app:layout_constraintEnd_toEndOf="@+id/btnModificarPaquete"
+            app:layout_constraintStart_toStartOf="@+id/btnModificarPaquete"
+            app:layout_constraintTop_toTopOf="@+id/btnEliminarPaquete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

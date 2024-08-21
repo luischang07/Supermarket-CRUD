@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:scrollbarStyle="outsideInset"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity_crear_paquetes"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnGrabarP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#016CBA"
+            android:text="@string/grabar"
+            android:textColor="#fff"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnEliminarFila"
+            app:layout_constraintEnd_toStartOf="@+id/btnLimpiarP"
+            app:layout_constraintStart_toStartOf="@+id/btnEliminarFila"
+            app:layout_constraintTop_toBottomOf="@+id/btnAgregarFila"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <Button
+            android:id="@+id/btnLimpiarP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#016CBA"
+            android:text="@string/limpiar"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@+id/btnGrabarP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnGrabarP"
+            app:layout_constraintTop_toTopOf="@+id/btnGrabarP" />
+
+        <Button
+            android:id="@+id/btnEliminarFila"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#C60303"
+            android:text="@string/eliminar_fila"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/btnGrabarP"
+            app:layout_constraintEnd_toStartOf="@+id/btnAgregarFila"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:layout_constraintVertical_bias="0.842" />
+
+        <Button
+            android:id="@+id/btnAgregarFila"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#0A810C"
+            android:text="@string/agregar_fila"
+            android:textColor="#fff"
+
+            app:layout_constraintBottom_toBottomOf="@+id/btnEliminarFila"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEliminarFila"
+            app:layout_constraintTop_toTopOf="@+id/btnEliminarFila" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradientelogo"
+            android:padding="20dp"
+            android:text="@string/registro_paquetes"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="230dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutNombreCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.288">
+
+            <EditText
+                android:id="@+id/txtProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paquete_id"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            tools:context=".activity_consulta_polizas">
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnModificarPaquetes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#016CBA"
+            android:text="@string/modificar"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnLimpiarP"
+            app:layout_constraintStart_toStartOf="@+id/btnGrabarP"
+            app:layout_constraintTop_toBottomOf="@+id/btnGrabarP"
+            app:layout_constraintVertical_bias="0.02" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
